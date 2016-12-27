@@ -3,3 +3,15 @@
 ################################################################################
 
 /.vs
+/FSL.AngularJS/bin
+/FSL.AngularJS/obj/Debug
+*.user
+/FSL.Mvc/bin
+/FSL.Mvc/obj/Debug
+/packages
+/FSL.WebForms/bin
+/FSL.WebForms/obj/Debug
+/FSL.XamarinForms/FSL.XamarinForms/obj/Debug
+/FSL.XamarinForms/FSL.XamarinForms.Droid/obj/Debug
+/FSL.XamarinForms/FSL.XamarinForms/bin/Debug
+/FSL.XamarinForms/FSL.XamarinForms.Droid/bin/Debug
