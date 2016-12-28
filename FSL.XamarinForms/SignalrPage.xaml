@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FSL.XamarinForms.SignalrPage">
+    <StackLayout>
+        <Frame
+        Padding="10, 5"
+        HasShadow="False"
+        BackgroundColor="Transparent">
+            <Frame.Content>
+                <Entry x:Name="Message"></Entry>
+            </Frame.Content>
+        </Frame>
+        <Frame 
+        Padding="10, 5"
+        HasShadow="False"
+        BackgroundColor="Transparent">
+            <Frame.Content>
+                <Button Text="Send" Clicked="Send"></Button>
+            </Frame.Content>
+        </Frame>
+        <Frame
+        Padding="10, 5"
+        HasShadow="False"
+        BackgroundColor="Transparent">
+            <Frame.Content>
+                <Label Text="{Binding Messages}" />
+            </Frame.Content>
+        </Frame>
+    </StackLayout>
+</ContentPage>

@@ -13,7 +13,7 @@ namespace FSL.XamarinForms
         {
             InitializeComponent();
 
-            MainPage = new FSL.XamarinForms.MainPage();
+            MainPage = new FSL.XamarinForms.SignalrPage();
         }
 
         protected override void OnStart()
