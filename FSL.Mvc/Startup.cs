@@ -1,7 +1,7 @@
 ﻿using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartupAttribute(typeof(FSL.Mvc.Startup))]
+[assembly: OwinStartup(typeof(FSL.Mvc.Startup))]
 namespace FSL.Mvc
 {
     public partial class Startup
@@ -9,6 +9,7 @@ namespace FSL.Mvc
         public void Configuration(IAppBuilder app)
         {
             ConfigureAuth(app);
+            app.MapSignalR();
         }
     }
 }
