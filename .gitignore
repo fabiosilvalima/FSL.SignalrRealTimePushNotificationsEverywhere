@@ -25,3 +25,8 @@
 /FSL.XamarinForms.Droid/bin
 /FSL.XamarinForms.iOS/bin
 /FSL.XamarinForms.iOS/obj
+/FSL.AngularJS/obj/Release
+/FSL.Mvc/obj/Release
+/FSL.WebForms/obj/Release
+/FSL.WindowsForms/obj/Release
+/FSL.Wpf/obj/Release

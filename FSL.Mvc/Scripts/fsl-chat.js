@@ -12,7 +12,7 @@ $(document).ready(function () {
     var chatHub = $.connection.hub.proxies.chathub;
 
     chatHub.client.receiveMessage = function (msg) {
-        messages.html(messages.html() + '<br />' + msg);
+        messages.html(msg + '<br />' + messages.html());
         chatHub.server.sendDateTimeServer();
     };
 
@@ -26,7 +26,13 @@ $(document).ready(function () {
 
     message.keydown(function (key) {
         if (key.keyCode == 13) {
-            chatHub.server.sendMessage(user.val(), message.val());
+            var msg = message.val();
+            if (msg) {
+                if (msg.substr(0, 4) === 'http') {
+                    msg = '<a href="' + msg + '" target="_blank">' + msg  + '</a>';
+                }
+            }
+            chatHub.server.sendMessage(user.val(), msg);
             message.val('');
         }
     });

@@ -1,38 +1,24 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Chat FSL - SignalR";
 }
 
 <div class="jumbotron">
-    <h1>Teste de Chat FSL - SignalR</h1>
-    <p class="lead">Teste de SignalR usando MVC</p>
+    <h1>Chat FSL - SignalR</h1>
+    <p class="lead">SignalR usando MVC</p>
 </div>
-
-@*
+    
+<div id="chat">
     <div class="row">
         <div class="col-md-4">
-            <h2>Getting started</h2>
-            <p>
-                ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-                enables a clean separation of concerns and gives you full control over markup
-                for enjoyable, agile development.
-            </p>
-            <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+            <h2>Dados Básicos</h2>
+            <b>Usuário: </b> <input type="text" id="user" /><br />
+            <b>Mensagem: </b> <input type="text" id="message" /><br />
+            <b>Usuários Conectados:</b> <span id="users">0</span><br />
+            <b>Última Atualização:</b> <span id="date">N/A</span>
         </div>
-        <div class="col-md-4">
-            <h2>Get more libraries</h2>
-            <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-            <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        <div class="col-md-8">
+            <h2>Mensagens</h2>
+            <div id="messages" style="vertical-align:top;"></div><br />
         </div>
-        <div class="col-md-4">
-            <h2>Web Hosting</h2>
-            <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-            <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-        </div>
-    </div>*@
-<div id="chat">
-    <div id="messages"></div><br />
-    <b>usuário: </b><input type="text" id="user" /><br />
-    <b>mensagem: </b><input type="text" id="message" /><br />
-    <b>usuários conectados:</b><span id="users">0</span><br />
-    <b>última atualização:</b><span id="date">N/A</span>
+    </div>
 </div>
